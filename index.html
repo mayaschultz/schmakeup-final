@@ -5,6 +5,14 @@
     <title>Schmakeup</title>
     <meta name="viewport" content="width=device-width,initial-scale=1" />
     <link href="css/main.css" rel="stylesheet" />
+    <script>
+      const onContactClick = function () {
+        location.href = "#"
+      };
+      const onLearnMoreClick = function () {
+        location.href = "./pages/about.html"
+      }
+    </script>
   </head>
   <body id="home">
     <header>
@@ -12,9 +20,9 @@
       <input type="checkbox" id="nav-toggle" class="nav-toggle" />
       <nav>
         <ul>
-          <li><a href="./about.html">About</a></li>
-          <li><a href="./services.html">Services</a></li>
-          <li><a href="./testimonials.html">Testimonials</a></li>
+          <li><a href="./pages/about.html">About</a></li>
+          <li><a href="./pages/services.html">Services</a></li>
+          <li><a href="./pages/testimonials.html">Testimonials</a></li>
           <li><a href="#">FAQ</a></li>
           <li><a href="#">Contact</a></li>
         </ul>
@@ -29,16 +37,22 @@
         <div class="banner__text">
           <h1>Schmakeup</h1>
           <p>Professional Makeup Artist</p>
+          <div>
+            <button onclick="onContactClick()" type="button">Contact Now</button>
+          </div>
         </div>
       </div>
-      <div class="about">
-        <div class="about__text">
+      <div class="content">
+        <div class="content__text">
           <h2>About me</h2>
           <p>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas
             convallis mauris nisl, ut facilisis sem molestie quis. Aenean sit
             amet massa enim. Vivamus a consectetur tortor, ac feugiat
           </p>
+          <div class="content__text__buttons">
+            <button onclick="onLearnMoreClick()" type="button">Learn more About Me</button>
+          </div>
         </div>
         <img src="./images/banner.jpg" />
       </div>
